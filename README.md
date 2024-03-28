@@ -3,6 +3,9 @@
 ## Overview
 InspectAI is a groundbreaking solution designed to transform the traditional PCB (Printed Circuit Board) inspection process through the integration of advanced artificial intelligence and augmented reality technologies. By leveraging a pair of AR-enabled glasses, such as Google Spectacles, workers can inspect PCBs with enhanced precision and efficiency. The InspectAI model processes the live video feed captured by the glasses, promptly identifying any defects and visually highlighting them on both the glasses' AR display and an external screen. Additionally, our system is capable of generating a detailed 3D model of the PCB from the video feed, offering an in-depth analysis tool for quality assurance and inspection teams.
 
+![Uploading image.png…]()
+
+
 ## Dataset
 Our current dataset is a robust collection that consists of 10,668 images, each meticulously annotated to assist in training our AI model. This extensive dataset ensures high accuracy and reliability in defect detection, providing a strong foundation for the effectiveness of InspectAI.
 
