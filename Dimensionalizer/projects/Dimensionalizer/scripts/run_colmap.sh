@@ -10,6 +10,7 @@
 
 # usage: run_colmap.sh <project_path>
 
+
 colmap feature_extractor \
     --database_path=${1}/database.db \
     --image_path=${1}/images_raw \
