@@ -8,6 +8,7 @@
 # license agreement from NVIDIA CORPORATION is strictly prohibited.
 # -----------------------------------------------------------------------------
 
+
 # usage: dtu_download.sh <path_to_dtu>
 
 echo "Download DTU data"
@@ -18,4 +19,4 @@ rm data.zip
 unzip -q data_DTU.zip -d ${1}
 rm data_DTU.zip
 echo "Generate json files"
-python3 projects/neuralangelo/scripts/convert_dtu_to_json.py --dtu_path ${1}
+python3 projects/Dimensionalizer/scripts/convert_dtu_to_json.py --dtu_path ${1}
