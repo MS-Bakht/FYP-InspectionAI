@@ -8,6 +8,7 @@
 # license agreement from NVIDIA CORPORATION is strictly prohibited.
 # -----------------------------------------------------------------------------
 
+
 # usage: dtu_download.sh <path_to_dtu>
 
 echo "Download DTU data"
