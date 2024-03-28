@@ -26,7 +26,7 @@ ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 def generate_config(args):
     cfg = Dict()
-    cfg._parent_ = "projects/neuralangelo/configs/base.yaml"
+    cfg._parent_ = "projects/Dimensionalizer/configs/base.yaml"
     num_images = len(os.listdir(os.path.join(args.data_dir, "images")))
     # model cfg
     if args.auto_exposure_wb:
@@ -51,7 +51,7 @@ def generate_config(args):
     else:
         raise TypeError("Unknown scene type")
     # data config
-    cfg.data.type = "projects.neuralangelo.data"
+    cfg.data.type = "projects.Dimensionalizer.data"
     cfg.data.root = args.data_dir
     img = Image.open(os.path.join(args.data_dir, "images", os.listdir(os.path.join(args.data_dir, "images"))[0]))
     w, h = img.size
@@ -61,7 +61,7 @@ def generate_config(args):
     cfg.data.readjust.center = [0., 0., 0.]
     cfg.data.readjust.scale = 1.
     # export cfg
-    cfg_fname = os.path.join(dir_path, "projects/neuralangelo/configs", f"custom/{args.sequence_name}.yaml")
+    cfg_fname = os.path.join(dir_path, "projects/Dimensionalizer/configs", f"custom/{args.sequence_name}.yaml")
     with open(cfg_fname, "w") as file:
         yaml.safe_dump(cfg.to_dict(), file, default_flow_style=False, indent=4)
     print("Config generated to file:", cfg_fname)
