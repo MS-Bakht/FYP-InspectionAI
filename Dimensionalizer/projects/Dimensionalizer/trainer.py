@@ -17,7 +17,7 @@ import wandb
 from imaginaire.utils.distributed import master_only
 from imaginaire.utils.visualization import wandb_image
 from projects.nerf.trainers.base import BaseTrainer
-from projects.neuralangelo.utils.misc import get_scheduler, eikonal_loss, curvature_loss
+from projects.Dimensionalizer.utils.misc import get_scheduler, eikonal_loss, curvature_loss
 
 
 class Trainer(BaseTrainer):

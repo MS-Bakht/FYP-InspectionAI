@@ -17,8 +17,8 @@ from collections import defaultdict
 
 from imaginaire.models.base import Model as BaseModel
 from projects.nerf.utils import nerf_util, camera, render
-from projects.neuralangelo.utils import misc
-from projects.neuralangelo.utils.modules import NeuralSDF, NeuralRGB, BackgroundNeRF
+from projects.Dimensionalizer.utils import misc
+from projects.Dimensionalizer.utils.modules import NeuralSDF, NeuralRGB, BackgroundNeRF
 
 
 class Model(BaseModel):
