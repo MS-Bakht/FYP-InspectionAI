@@ -1,0 +1,28 @@
+! <!DOCTYPE html>
+<html>
+<head>
+    <title>Camera Live Feed</title>
+</head>
+<body>
+    <img id="camera-feed" src="" alt="Camera Feed">
+
+    <script>
+        const imgElement = document.getElementById("camera-feed");
+        const socket = new WebSocket("ws://localhost:8000/ws");
+
+        socket.onopen = (event) => {
+            console.log("WebSocket connection opened:", event);
+        };
+
+        socket.onmessage = (event) => {
+            const frameData = event.data;
+            const imageUrl = `data:image/jpeg;base64,${btoa(String.fromCharCode(...new Uint8Array(frameData)))}`;
+            imgElement.src = imageUrl;
+        };
+
+        socket.onclose = (event) => {
+            console.log("WebSocket connection closed:", event);
+        };
+    </script>
+</body>
+</html>

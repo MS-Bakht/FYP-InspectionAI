@@ -1,0 +1,43 @@
+# docker build -f docker/Dockerfile-neuralangelo -t chenhsuanlin/neuralangelo:23.04-py3 .
+# docker push chenhsuanlin/neuralangelo:23.04-py3
+
+FROM nvcr.io/nvidia/pytorch:23.04-py3
+ARG DEBIAN_FRONTEND=noninteractive
+
+# Install basics
+RUN apt-get update
+
+RUN apt-get install -y build-essential
+
+RUN apt-get install -y bzip2
+
+RUN apt-get install -y ca-certificates
+
+RUN apt-get install -y cmake
+
+RUN apt-get install -y curl
+
+RUN apt-get install -y ffmpeg
+
+RUN apt-get install -y g++
+
+RUN apt-get install -y git
+
+RUN apt-get install -y libx264-dev
+
+RUN apt-get install -y tmux
+
+RUN apt-get install -y wget
+
+
+# Update pip
+RUN pip install --upgrade pip
+
+# Code formatting
+RUN pip install --upgrade \ flake8 \ pre-commit
+
+# Install base Python libraries for Imaginaire
+COPY requirements.txt requirements.txt
+ARG FORCE_CUDA=1
+ARG TCNN_CUDA_ARCHITECTURES=70,72,75,80,86
+RUN pip install --upgrade -r requirements.txt
