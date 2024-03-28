@@ -1,7 +1,3 @@
-# docker build -f docker/Dockerfile-colmap -t chenhsuanlin/colmap:3.8 .
-# docker push chenhsuanlin/colmap:3.8
-
-# Use an appropriate base image that provides the necessary tools and dependencies
 FROM nvcr.io/nvidia/cuda:11.8.0-devel-ubuntu20.04
 ARG DEBIAN_FRONTEND=noninteractive
 

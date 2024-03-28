@@ -1,6 +1,3 @@
-# docker build -f docker/Dockerfile-neuralangelo -t chenhsuanlin/neuralangelo:23.04-py3 .
-# docker push chenhsuanlin/neuralangelo:23.04-py3
-
 FROM nvcr.io/nvidia/pytorch:23.04-py3
 ARG DEBIAN_FRONTEND=noninteractive
 
