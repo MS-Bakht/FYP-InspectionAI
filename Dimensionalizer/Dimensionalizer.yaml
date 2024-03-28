@@ -1,5 +1,5 @@
 # conda env create --file neuralangelo.yaml
-name: neuralangelo
+name: Dimensionalizer
 channels:
   - conda-forge
   - pytorch
