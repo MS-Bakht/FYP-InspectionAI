@@ -22,7 +22,7 @@ from imaginaire.config import Config, recursive_update_strict, parse_cmdline_arg
 from imaginaire.utils.distributed import init_dist, get_world_size, is_master, master_only_print as print  # noqa: E402
 from imaginaire.utils.gpu_affinity import set_affinity  # noqa: E402
 from imaginaire.trainers.utils.get_trainer import get_trainer  # noqa: E402
-from projects.neuralangelo.utils.mesh import extract_mesh, extract_texture  # noqa: E402
+from projects.Dimensionalizer.utils.mesh import extract_mesh, extract_texture  # noqa: E402
 
 
 def parse_args():

@@ -24,7 +24,7 @@ from pathlib import Path
 
 dir_path = Path(os.path.dirname(os.path.realpath(__file__))).parents[2]
 sys.path.append(dir_path.__str__())
-from projects.neuralangelo.scripts.convert_data_to_json import _cv_to_gl  # noqa: E402
+from projects.Dimensionalizer.scripts.convert_data_to_json import _cv_to_gl  # noqa: E402
 
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
