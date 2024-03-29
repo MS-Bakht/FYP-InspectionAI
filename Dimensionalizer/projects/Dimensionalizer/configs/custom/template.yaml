@@ -11,7 +11,7 @@
 # NOTE: this template is an example for designing your custom config file. It is not intended to be used directly.
 # Please preprocess your custom data and auto-generate the config file before customizing.
 
-_parent_: projects/neuralangelo/configs/base.yaml
+_parent_: projects/Dimensionalizer/configs/base.yaml
 
 model:
     object:
@@ -26,7 +26,7 @@ model:
         dim: 8
 
 data:
-    type: projects.neuralangelo.data
+    type: projects.Dimensionalizer.data
     root:  # The root path of the dataset.
     num_images:  # The number of training images.
     train:

@@ -15,9 +15,9 @@ from functools import partial
 import numpy as np
 import tinycudann as tcnn
 
-from projects.neuralangelo.utils.spherical_harmonics import get_spherical_harmonics
-from projects.neuralangelo.utils.mlp import MLPforNeuralSDF
-from projects.neuralangelo.utils.misc import get_activation
+from projects.Dimensionalizer.utils.spherical_harmonics import get_spherical_harmonics
+from projects.Dimensionalizer.utils.mlp import MLPforNeuralSDF
+from projects.Dimensionalizer.utils.misc import get_activation
 from projects.nerf.utils import nerf_util
 
 

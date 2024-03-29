@@ -1,4 +1,4 @@
-# conda env create --file neuralangelo.yaml
+# conda env create --file Dimensionalizer.yaml
 name: Dimensionalizer
 channels:
   - conda-forge
